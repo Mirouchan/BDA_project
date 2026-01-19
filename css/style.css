@@ -1,0 +1,210 @@
+/* ===== Global ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #eef2f7, #dbe7f3);
+    min-height: 100vh;
+    color: #2c3e50;
+}
+
+/* ===== Container ===== */
+.container {
+    width: 85%;
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.31);
+}
+
+/* ===== Headings ===== */
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #230b35;
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+ color:#03193f;
+    border-right: 7px solid #04368b;
+    padding-left: 12px;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 25px 0 10px;
+    color: #374151;
+}
+
+/* ===== Links ===== */
+a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Lists ===== */
+ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+li {
+    background: #f9fafb;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-left: 5px solid #052455;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== Forms ===== */
+form {
+    margin-top: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+select,
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+select:focus,
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+/* ===== Buttons ===== */
+input[type="submit"],
+button {
+    padding: 14px 28px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
+}
+
+/* ===== Role Buttons (Index) ===== */
+.role-btn {
+    display: block;
+    width: 320px;
+    margin: 18px auto;
+    padding: 18px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #2563eb, #1e3a8a);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.role-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(30, 64, 175, 0.4);
+}
+
+/* ===== Dashboard Cards ===== */
+.card {
+    background: #f8fafc;
+    border-radius: 14px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.card.success {
+    border-left: 6px solid #16a34a;
+}
+
+.card.warning {
+    border-left: 6px solid #f59e0b;
+}
+
+.card.danger {
+    border-left: 6px solid #dc2626;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .container {
+        width: 92%;
+        padding: 25px;
+    }
+
+    .role-btn {
+        width: 100%;
+    }
+}
+.top-actions {
+    display: flex;
+    justify-content: flex-end; /* الزر يمين */
+    margin-bottom: 20px;
+}
+
+.back-btn {
+    padding: 10px 18px;
+    background: #2a05a5;
+    color: #ecf1f8;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+
+.back-btn:hover {
+    background: #d1d5db;
+    text-decoration: none;
+    transform: translateX(-3px);
+}
+
+.cards-row .card {
+    min-width: 330px; /* أصغر حجم للكرت */
+    max-width: 400px; /* أقصى حجم للكرت */
+    text-align: center;
+color: #dbe7f3;
+    margin: 15px auto;
+
+}
